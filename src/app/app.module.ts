@@ -11,11 +11,10 @@ import 'hammerjs';
 import { AppRoutingModule } from './init-modules/app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './init-pages/home/home.component';
-import { LoginComponent } from './init-pages/login/login.component';
-import { FourNotFourComponent } from './init-pages/four-not-four/four-not-four.component';
 import { MaterialsModule } from './init-modules/materials.module';
 import { HeaderComponent } from './init-components/header/header.component';
+import { InitPagesModule } from './init-pages/init-pages.module';
+import { QuoPipesModule } from './core-modules/quo-pipes/quo-pipes.module';
 
 /**
  * Core module defined below
@@ -23,16 +22,15 @@ import { HeaderComponent } from './init-components/header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    LoginComponent,
-    FourNotFourComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialsModule
+    MaterialsModule,
+    InitPagesModule,
+    QuoPipesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
