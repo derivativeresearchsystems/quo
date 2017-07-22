@@ -3,6 +3,7 @@
  * */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import 'hammerjs';
 
 /**
  * App modules imported below
@@ -13,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './init-pages/home/home.component';
 import { LoginComponent } from './init-pages/login/login.component';
 import { FourNotFourComponent } from './init-pages/four-not-four/four-not-four.component';
+import { MaterialsModule } from './init-modules/materials.module';
+import { HeaderComponent } from './init-components/header/header.component';
 
 /**
  * Core module defined below
@@ -22,12 +25,14 @@ import { FourNotFourComponent } from './init-pages/four-not-four/four-not-four.c
     AppComponent,
     HomeComponent,
     LoginComponent,
-    FourNotFourComponent
+    FourNotFourComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

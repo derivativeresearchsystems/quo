@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* At least one prebuilt them is required by Angular Material Components */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Remove default body padding and margins applied by some browsers like Chrome */
 body {
   margin: 0;
   padding: 0;
