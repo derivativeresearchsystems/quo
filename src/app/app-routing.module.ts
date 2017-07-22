@@ -7,9 +7,9 @@ import { Routes, RouterModule } from '@angular/router';
 /**
  * App modules imported below
  * */
-import { HomeComponent } from '../init-pages/home/home.component';
-import { LoginComponent } from '../init-pages/login/login.component';
-import { FourNotFourComponent } from '../init-pages/four-not-four/four-not-four.component';
+import { HomeComponent } from './quo-pages/home/home.component';
+import { LoginComponent } from './quo-pages/login/login.component';
+import { FourNotFourComponent } from './quo-pages/four-not-four/four-not-four.component';
 
 /**
  * Route configuration implemented below
